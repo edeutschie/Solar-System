@@ -1,4 +1,7 @@
 # Wave 1: create a Planet class
+# added a note
+#add another note
+
 class Planet
   attr_reader :name, :color, :moons, :state, :diameter #reader only
 
@@ -74,7 +77,7 @@ class SolarSystem
   def initialize
     @my_solar_system = []
   end
-  
+
   def add_a_planet(planet)
     @my_solar_system.push(planet)
   end
@@ -84,7 +87,7 @@ class SolarSystem
       @my_solar_system.push(planet)
     end
   end
-  
+
   def display_info
     @my_solar_system.each do |planet|
       puts "#{planet.name} is a #{planet.color} planet. It has #{planet.moons} moons, a diameter of #{planet.diameter} and exists in a #{planet.state} state."
